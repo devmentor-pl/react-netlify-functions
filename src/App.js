@@ -1,7 +1,17 @@
+import {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+    useEffect(() => {
+        fetch('./netlify/functions/getPrivateRepos')
+            .then(resp => resp.text())
+            .then(data => console.log(data));
+            // .then(data => console.log(data));
+    }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">

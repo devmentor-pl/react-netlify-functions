@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/devmentor-pl/react-netlify-functions"
+    "type": "git",
+    "url": "https://github.com/devmentor-pl/react-netlify-functions"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -39,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
