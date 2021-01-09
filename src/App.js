@@ -1,21 +1,13 @@
-import {useEffect} from 'react';
+import PrivateRepos from './PrivateRepos';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
-    useEffect(() => {
-        fetch('./netlify/functions/getPrivateRepos')
-            .then(resp => resp.text())
-            .then(data => console.log(data));
-            // .then(data => console.log(data));
-    }, []);
-
-
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <PrivateRepos/>
         <p>
             <small>v{process.env.REACT_APP_VERSION}</small></p>
         <a
