@@ -7,7 +7,7 @@ exports.handler = async () => {
     return await fetch(`${url}?visibility=private&affiliation=owner`, {
         headers: {
             Accept: 'application/vnd.github.v3+json',
-            Authorization: `token ${process.env.GITHUB_TOKEN}`,
+            Authorization: `token ${process.env.GH_TOKEN}`,
         }
     })
     .then(resp => resp.json())
